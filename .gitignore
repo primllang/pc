@@ -1,0 +1,8 @@
+CMakeCache.txt
+c_cpp_properties.json
+*.cmake
+CMakeFiles/
+*.cod
+build/
+out/
+.vs/

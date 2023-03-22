@@ -1,0 +1,25 @@
+{
+  "name": "priml",
+  "displayName": "Priml",
+  "description": "Priml Lang",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.76.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "priml",
+      "aliases": ["Priml Lang", "priml"],
+      "extensions": ["pc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "priml",
+      "scopeName": "source.priml",
+      "path": "./syntaxes/priml.tmLanguage.json"
+    }]
+  }
+}

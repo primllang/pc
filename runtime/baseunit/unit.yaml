@@ -1,0 +1,16 @@
+unit:
+  name: base
+  type: lib
+  version: 0.1.1
+  edition: 2022
+src:
+  - main.pc
+  - str.pc
+  - vec.pc
+deps:
+ext:
+  - pcrt:
+      path: pcrt
+      build: cmake
+      includedir: pcrt/include
+      lib: pcrt

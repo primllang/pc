@@ -1,0 +1,72 @@
+{
+    "configurations": [
+        {
+            "name": "(gdb) Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "/home/yasser/src/primal/out/Debug/ptest",
+            "args": ["testList2"],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "Set Disassembly Flavor to Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "win:ptest",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "D:\\src\\primal\\out\\debug\\ptest.exe",
+            "args": ["testLoops"],
+            "cwd": "c:\\x",
+            "stopAtEntry": false,
+            "environment": [],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "win:primalc",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "D:\\src\\primal\\out\\debug\\pc.exe",
+            "args": ["build", "--cleanfirst", "--config", "c:\\x\\pcdeploy\\Program Files (x86)\\primalproj\\templates\\plconfig.yaml"],
+            "cwd": "c:\\x\\impl6",
+            "stopAtEntry": false,
+            "environment": [],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "win:playg",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "D:\\src\\primal\\out\\debug\\playg.exe",
+            "args": ["C:\\x\\hw\\target\\diag\\unit_bld.log"],
+            "cwd": "c:\\x",
+            "stopAtEntry": false,
+            "environment": [],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "win:prplayg",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "D:\\src\\primal\\out\\debug\\prplayg.exe",
+            "args": [],
+            "cwd": "c:\\x",
+            "stopAtEntry": false,
+            "environment": [],
+            "console": "integratedTerminal"
+        }
+    ]
+}

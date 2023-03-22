@@ -1,0 +1,28 @@
+
+pub cpp.include("pcrt.h")
+
+pub func print(string list...)
+    ::= cpp.function("printva_")
+
+pub func argcount() -> usize
+    ::= cpp.function("argcount_")
+pub func argstr(usize n) -> string
+    ::= cpp.function("argstr_")
+
+pub cpp.setprop("mainfunc", "pcrtmain")
+pub cpp.setprop("varargspec", "vararg")
+pub cpp.setprop("unitwidehdrfn", "unitwide.h")
+
+pub cpp.setprop("baseclass", "primal::PlObject")
+pub cpp.setprop("strongreftype", "primal::PlRef")
+pub cpp.setprop("weakreftype", "primal::PlWeakRef")
+pub cpp.setprop("interfreftype", "primal::PlInterfRef")
+
+pub cpp.setprop("boxclass", "primal::PlBoxObj")
+pub cpp.setprop("boxdatafld", "mData")
+
+pub cpp.setprop("strtype", "primal::string")
+pub cpp.setprop("strlitctor", "primal::string")  // strlitctor(czstr, len)
+
+pub cpp.setprop("createmethod", "createObject")
+

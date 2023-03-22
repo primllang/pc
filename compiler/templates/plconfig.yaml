@@ -1,0 +1,7 @@
+common:
+  unityamlfn: "unit.yaml"
+  cmaketemplate: "primalcmake.txt"
+win32:
+  templatedir: .
+linux:
+  templatedir: .

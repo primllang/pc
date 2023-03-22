@@ -1,0 +1,26 @@
+pub interf CppString
+{
+func reserve(usize neededsize)
+func append(char c)
+func append(usize count, char c)
+func append(czstr s, usize l)
+func append(czstr s)
+func append(string sb)
+func replaceLast(char c)
+func eraseLast()
+func last() -> char
+func first() -> char
+func cz() -> czstr
+func length() -> usize
+func empty() -> bool
+func compare(czstr s) -> int32
+func compare(string s) -> int32
+func equals(czstr s) -> bool
+func equals(char c) -> bool
+func exist(char c) -> bool
+func assign(czstr str)
+func assign(czstr str, usize len)
+func clear()
+}
+
+pub type string ::= cpp.type("primal::string", CppString)

@@ -1,0 +1,11 @@
+pub interf CppVector<T>
+{
+    func length() -> usize
+    func appendNew() -> T
+    func append(T o)
+    func insertNew(usize pos) -> T
+    func get(usize pos) -> T
+}
+
+pub type Vector ::= cpp.type("primal::PlVector", CppVector, "template|cppobject|cppiter")
+
