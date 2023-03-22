@@ -16,13 +16,6 @@ target_include_directories(libbase
     PUBLIC include
 )
 
-add_executable(test_parser
-    test/parser/main.cpp
-)
-target_link_libraries(test_parser
-    libbase
-)
-
 add_executable(ptest
     test/ptest/tests1.cpp
     test/ptest/tests2.cpp

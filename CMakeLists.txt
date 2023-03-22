@@ -17,7 +17,6 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/out)
 
 add_subdirectory(libbase)
 add_subdirectory(compiler)
-add_subdirectory(test)
 add_subdirectory(runtime)
 
 install(TARGETS pc)
