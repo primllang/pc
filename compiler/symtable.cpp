@@ -130,7 +130,7 @@ EntityType PlSymbolTable::findSymbolSc(std::string sc, const char* symbol, size_
         *count = cn;
         if (mSpew && cn > 1)
         {
-            dbglog("%lld dups for symbol '%s' found at sc=%s --returning 1\n", cn, sc.c_str(), symbol);
+            dbglog("%zu dups for symbol '%s' found at sc=%s --returning 1\n", cn, sc.c_str(), symbol);
         }
     }
 
