@@ -1,0 +1,11 @@
+unit: 
+  name: objects
+  type: exe
+  version: 0.1.1
+  edition: 2023
+src: 
+  - main.pc
+deps: 
+  - base: 
+      namespace: global
+ext: 

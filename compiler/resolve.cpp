@@ -925,7 +925,12 @@ const char* PlTypeInfo::name()
 
 bool PlTypeInfo::isCompat(const PlTypeInfo& that)
 {
-    if (mDT == DataType::d_object)
+    if (that.mDT == DataType::d_none || mDT == DataType::d_none)
+    {
+        // For now
+        return true;
+    }
+    else if (mDT == DataType::d_object)
     {
         if (that.mDT == mDT && base::streql(mName, that.mName))
         {
@@ -946,11 +951,6 @@ bool PlTypeInfo::isCompat(const PlTypeInfo& that)
     }
     else if (isFloat(mDT) && isFloat(that.mDT))
     {
-        return true;
-    }
-    else if (that.mDT == DataType::d_none)
-    {
-        // For now
         return true;
     }
 

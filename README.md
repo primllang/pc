@@ -1,12 +1,26 @@
 # Priml Programming Language
 ## Introduction
+Priml (pronounced 'primal') is a new programming language aimed at facilitating systems and AI infrastructure development.
 
+The design of the Priml language draws inspiration from C++, Rust, and Swift. Personally, I hold Rust and Swift in high regard as excellent programming languages, while my relationship with C++ is more of a love-hate one (you can read my thoughts on C++ at [C++ rant](doc/cppthoughts.md)). Many of us who were C programmers decades ago initially viewed C++ as "C with classes". While there have been some positive developments, C++ has largely declined. The language has become incredibly complex and error-prone due to the influence of C++ elitists and standards committees, and useful features for safety, security, or package management have not been added. To this day, there is no % format specifier available for printing strings in C++.
 
-## Installing dependencies
+>*"Speaking of languages, it's time to halt starting any new projects in C/C++ and use Rust for those scenarios where a non-GC language is required. For the sake of security and reliability. the industry should declare those languages as deprecated"* -- Mark Russinovich
+
+Good advice from Mark but giving up C/C++ also gives up a lot of good concepts (the usable core concepts). As I mentioned, Rust is excellent but has a many new concepts, limitations, and frankly some very strange syntax.
+
+What if there was a language that can take the core good C/C++ concepts and none of the bad stuff, good concepts from Rust/Swift, and a incredibily easy to learn and clean syntax?  **That is the design of Priml.**
+
+## Learn more about Priml
+
+Docs
+
+Samples
+
+## Building the compiler
+Building the compiler requires a few dependencies. They are listed here with instructions on how to install on Linux and Windows:
 
 [Dependencies Setup](doc/setup.md)
 
-## Building the compiler
 After installing the dependencies, you can build the compiler from the source code. Following scripts are provided to make it easy to build and install the compiler.
 
 | Scripts | |

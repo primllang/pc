@@ -8,6 +8,8 @@
 
 > *"C++ is steaming pile of crap. It's like lot of the features in C++ were designed to make your code more error prone, and less understandable.  Consider for example, there are 18 different forms of variable initialization in the standard, with very close syntax.  At the same time, lot of the features that could have helped your code were never added, instead programmers need to resort to add-ons like compiler warnings, SAL, GSL, safe str, static code analysis, address sanitizer, and build tools like CMake ..."* -- Yasser Asmi
 
+>*"Speaking of languages, it's time to halt starting any new projects in C/C++ and use Rust for those scenarios where a non-GC language is required. For the sake of security and reliability. the industry should declare those languages as deprecated"* -- Mark Russinovich
+
 > "Top 10 dumb mistakes to avoid with C++ 11 smart pointers" https://www.acodersjourney.com/top-10-dumb-mistakes-avoid-c-11-smart-pointers/ -- acodersjourney.com
 
 But, are these dumb mistakes or bad language design?

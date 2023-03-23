@@ -1,0 +1,60 @@
+
+// Declare an interface, HasArea
+interf HasArea
+{
+    func area() -> float64
+}
+
+// Define an object, Circle
+object Circle
+{
+    float64 x
+    float64 y
+    float64 radius
+}
+
+// Define another object, Square
+object Square
+{
+    float64 x
+    float64 y
+    float64 side
+}
+
+// Implement the interface HasArea for the circle object
+impl HasArea for Circle
+{
+    func area() -> float64
+    {
+        return 3 * (radius * radius)
+    }
+}
+
+// Implement the interface HasArea for the square object
+impl HasArea for Square
+{
+    func area() -> float64
+    {
+        return side * side
+    }
+}
+
+// A function that takes an interface reference to an object
+// It can print the area of any object that implements the HasArea interface
+func printArea(HasArea shape)
+{
+    print("This shape has an area of: ", $shape.area())
+}
+
+func main()
+{
+    var Circle c = new Circle
+    c.radius = 2.2
+
+    var Square s = new Square
+    s.side = 4.2
+
+    printArea(c)
+    printArea(s)
+}
+

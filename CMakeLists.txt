@@ -5,7 +5,7 @@ set(CMAKE_C_COMPILER "C:/Program Files/LLVM/bin/clang.exe")
 set(CMAKE_CXX_COMPILER "C:/Program Files/LLVM/bin/clang++.exe")
 ENDIF()
 
-project(primalproj)
+project(primllang)
 
 message(">>>> SYSTEM: ${CMAKE_SYSTEM_NAME}")
 
