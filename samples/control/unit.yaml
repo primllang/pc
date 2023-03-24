@@ -1,12 +1,11 @@
-unit:
-  name: objects
+unit: 
+  name: control
   type: exe
   version: 0.1.1
   edition: 2023
-
-src: glob
-
-deps:
-  - base:
+src: 
+  - main.pc
+deps: 
+  - base: 
       namespace: global
-ext:
+ext: 

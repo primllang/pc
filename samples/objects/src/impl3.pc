@@ -1,0 +1,8 @@
+// Implement for methods from a yet another source file, in a different impl for object User
+impl User
+{
+    func showFromImpl3()
+    {
+        print("From *showFromImpl3: Userid: ", $userid, " Days active: ", $daysactive)
+    }
+}

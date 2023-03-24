@@ -26,7 +26,7 @@ impl HasArea for Circle
 {
     func area() -> float64
     {
-        return 3 * (radius * radius)
+        return 3.14 * (radius * radius)
     }
 }
 

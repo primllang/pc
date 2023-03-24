@@ -1,4 +1,31 @@
+object User
+{
+    int32 userid
+    int32 daysactive
+}
+
+// Implementation methods for object User
+impl User
+{
+    func init(int32 uid)
+    {
+        userid = uid
+        daysactive = 0
+    }
+
+    func show()
+    {
+        print("From obj: Userid: ", $userid, " Days active: ", $daysactive)
+    }
+}
+
 func main()
 {
-    print("Hello world!")
+    var User u = new User
+
+    u.init(1776)
+
+    u.show()
+    u.showFromImpl2()
+    u.showFromImpl3()
 }

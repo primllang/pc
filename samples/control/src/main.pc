@@ -1,0 +1,120 @@
+func testFor()
+{
+    print("-- for range loop --")
+    for i : range(0, 10)
+    {
+        print($i)
+    }
+    for i : rev rangeinc(0, 10)
+    {
+        print(" rev inc ", $i)
+    }
+
+    // See example of iter for in vector sample
+}
+
+func testWhile()
+{
+    print("-- while loop --")
+    var i = 10
+    while i < 20
+    {
+        i += 1
+        // continue can have if clause
+        continue if i == 15
+        print($i)
+    }
+}
+
+func testLoop()
+{
+    print("-- unconditional loop --")
+    var i = 0
+    loop
+    {
+        i += 1
+        print($i)
+        // break can have if clause
+        break if i == 8
+    }
+}
+
+func testSwitch()
+{
+    print("-- switch statement --")
+
+    var int x = 3
+    switch x
+    {
+        case 1
+        {
+            print("1")
+            // No fall through
+        }
+        case 2
+        {
+            print("2")
+        }
+        // Multiple values separated by comma
+        case 3, 4
+        {
+            print("3 or 4")
+        }
+        // Default case
+        case ...
+        {
+            print("Other values")
+        }
+    }
+
+}
+
+func testDefer()
+{
+    print("-- defer statement --")
+    print("defer:")
+    print("start")
+    defer
+    {
+        print("at exit part 1 (defer)")
+    }
+    print("middle")
+    defer
+    {
+        print("at exit part 2 (defer)")
+    }
+    print("more stuff")
+}
+
+func testIf()
+{
+    print("-- if statement --")
+
+    var a = 9
+    if a == 10
+    {
+        print("<if> 10")
+    }
+    else if a == 9
+    {
+        print("<else if> 9")
+    }
+    else if a == 8
+    {
+        print("<else if> 8")
+    }
+    else
+    {
+        print("<else>", $a)
+    }
+}
+
+func main()
+{
+    testFor()
+    testWhile()
+    testLoop()
+    testSwitch()
+    testDefer()
+    testIf()
+}

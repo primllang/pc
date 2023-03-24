@@ -1,0 +1,65 @@
+object User
+{
+    int32 userid
+    int32 daysactive
+    int32 year
+}
+
+impl User
+{
+    func init(int32 yr) -> int64
+    {
+        year = yr
+        userid = 1776
+        daysactive = 2321
+        return yr
+    }
+    func show()
+    {
+        print("From obj: Userid: ", $userid, " year: ", $year)
+    }
+}
+
+func update(User &u)
+{
+    u.userid = 2023
+}
+
+
+func main()
+{
+    var Vector<User> arr = new Vector<User>
+
+    var w = new User
+    var x = new User
+
+    w.show()
+    update(&w)
+    w.show()
+
+    x = w
+    x.show()
+
+    arr.appendNew().init(1991)
+    arr.appendNew().init(1993)
+    arr.appendNew().init(1996)
+    arr.appendNew().init(1969)
+    arr.appendNew().init(1971)
+
+    for i : rev range(0, arr.length())
+    {
+        print($i)
+        arr.get(i).show()
+    }
+
+    // Reverse Iter for for vector data structure
+    for usr : rev iter(arr)
+    {
+        usr.show()
+
+        for i : range(0, 5)
+        {
+            print(".")
+        }
+    }
+}
