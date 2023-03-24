@@ -2,7 +2,7 @@
 ## Introduction
 Priml (pronounced 'primal') is a new programming language aimed at facilitating systems and AI infrastructure development.
 
-The design of the Priml language draws inspiration from C++, Rust, and Swift. Personally, I hold Rust and Swift in high regard as excellent programming languages, while my relationship with C++ is more of a love-hate one (you can read my thoughts on C++ at [C++ rant](doc/cppthoughts.md)). Many of us who were C programmers decades ago initially viewed C++ as "C with classes". While there have been some positive developments, C++ has largely declined. The language has become incredibly complex and error-prone due to the influence of C++ elitists and standards committees, and useful features for safety, security, or package management have not been added. To this day, there is no % format specifier available for printing strings in C++.
+The design of the Priml language draws inspiration from C++, Rust, and Swift. Personally, I hold Rust and Swift in high regard as excellent programming languages, while my relationship with C++ is more of a love-hate one (you can read my thoughts on C++ [C++ rant](doc/cppthoughts.md)). Many of us who were C programmers decades ago initially viewed C++ as "C with classes". While there have been some positive developments, C++ has largely declined. The language has become incredibly complex and error-prone due to the influence of C++ elitists and standards committees, and useful features for safety, security, or package management have not been added. To this day, there is no % format specifier available for printing strings in C++.
 
 >*"Speaking of languages, it's time to halt starting any new projects in C/C++ and use Rust for those scenarios where a non-GC language is required. For the sake of security and reliability. the industry should declare those languages as deprecated"* -- Mark Russinovich
 
@@ -12,9 +12,8 @@ What if there was a language that can take the core good C/C++ concepts and none
 
 ## Learn more about Priml
 
-Docs
-
-Samples
+[Docs](doc/lang.md)
+[Samples](samples)
 
 ## Building the compiler
 Building the compiler requires a few dependencies. They are listed here with instructions on how to install on Linux and Windows:

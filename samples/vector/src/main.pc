@@ -25,7 +25,6 @@ func update(User &u)
     u.userid = 2023
 }
 
-
 func main()
 {
     var Vector<User> arr = new Vector<User>
@@ -46,6 +45,7 @@ func main()
     arr.appendNew().init(1969)
     arr.appendNew().init(1971)
 
+    // Reverse Range for
     for i : rev range(0, arr.length())
     {
         print($i)
@@ -59,7 +59,7 @@ func main()
 
         for i : range(0, 5)
         {
-            print(".")
+            print("|")
         }
     }
 }
