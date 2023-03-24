@@ -23,7 +23,7 @@ What if there was a language that can take the core good C/C++ concepts and none
 
 ## Learn more about Priml
 
-- [Docs](doc/lang.md)
+- [Language Docs](doc/lang.md)
 - [Samples](samples)
 
 ## Building the compiler
