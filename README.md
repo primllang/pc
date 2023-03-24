@@ -1,8 +1,19 @@
 # Priml Programming Language
+
+- [Priml Programming Language](#priml-programming-language)
+  - [Introduction](#introduction)
+  - [Learn more about Priml](#learn-more-about-priml)
+  - [Building the compiler](#building-the-compiler)
+    - [On Windows:](#on-windows)
+    - [On Linux:](#on-linux)
+  - [Running the compiler](#running-the-compiler)
+  - [The unit.yaml file](#the-unityaml-file)
+
+
 ## Introduction
 Priml (pronounced 'primal') is a new programming language aimed at facilitating systems and AI infrastructure development.
 
-The design of the Priml language draws inspiration from C++, Rust, and Swift. Personally, I hold Rust and Swift in high regard as excellent programming languages, while my relationship with C++ is more of a love-hate one (you can read my thoughts on C++ [C++ rant](doc/cppthoughts.md)). Many of us who were C programmers decades ago initially viewed C++ as "C with classes". While there have been some positive developments, C++ has largely declined. The language has become incredibly complex and error-prone due to the influence of C++ elitists and standards committees, and useful features for safety, security, or package management have not been added. To this day, there is no % format specifier available for printing strings in C++.
+The design of the Priml language draws inspiration from C++, Rust, and Swift. Personally, I hold Rust and Swift in high regard as excellent programming languages, while my relationship with C++ is more of a love-hate one (you can read my [C++ rant](doc/cppthoughts.md)). Many of us who were C programmers decades ago initially viewed C++ as "C with classes". While there have been some positive developments, C++ has largely declined. The language has become incredibly complex and error-prone due to the influence of C++ elitists and standards committees, and useful features for safety, security, or package management have not been added. To this day, there is no % format specifier available for printing strings in C++.
 
 >*"Speaking of languages, it's time to halt starting any new projects in C/C++ and use Rust for those scenarios where a non-GC language is required. For the sake of security and reliability. the industry should declare those languages as deprecated"* -- Mark Russinovich
 
@@ -12,8 +23,8 @@ What if there was a language that can take the core good C/C++ concepts and none
 
 ## Learn more about Priml
 
-[Docs](doc/lang.md)
-[Samples](samples)
+- [Docs](doc/lang.md)
+- [Samples](samples)
 
 ## Building the compiler
 Building the compiler requires a few dependencies. They are listed here with instructions on how to install on Linux and Windows:
@@ -90,7 +101,7 @@ Run the release build type of an executable **unit** using pc tool.
 ```
 pc run myexe --release
 ```
-## The **unit.yaml** file
+## The unit.yaml file
 Each unit has a yaml file that describes the unit, source files and  dependencies, and extended libraries written in cpp.
 ```yaml
 unit:
