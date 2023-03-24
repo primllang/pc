@@ -13,13 +13,13 @@
 ## Introduction
 Priml (pronounced 'primal') is a new programming language aimed at facilitating systems and AI infrastructure development.
 
-The design of the Priml language draws inspiration from C++, Rust, and Swift. Personally, I hold Rust and Swift in high regard as excellent programming languages, while my relationship with C++ is more of a love-hate one (you can read my [C++ rant](doc/cppthoughts.md)). Many of us who were C programmers decades ago initially viewed C++ as "C with classes". While there have been some positive developments, C++ has largely declined. The language has become incredibly complex and error-prone due to the influence of C++ elitists and standards committees, and useful features for safety, security, or package management have not been added. To this day, there is no % format specifier available for printing strings in C++.
+The design of the Priml language draws inspiration from C++, Rust, and Swift. Personally, I hold Rust and Swift in high regard as excellent programming languages, while my relationship with C++ is more of a love-hate one (you can read my [C++ rant](doc/cppthoughts.md)). Many of us who were C programmers decades ago initially viewed C++ as "C with classes". While there have been some positive developments, C++ has largely declined. Under guidance of C++ elitists and standards committees, the language has become incredibly complex and error-prone, and useful features for safety, security, or package management have not been added. To this day, there is no % format specifier available for printing strings in C++.
 
 >*"Speaking of languages, it's time to halt starting any new projects in C/C++ and use Rust for those scenarios where a non-GC language is required. For the sake of security and reliability. the industry should declare those languages as deprecated"* -- Mark Russinovich
 
-Good advice from Mark but giving up C/C++ also gives up a lot of good concepts (the usable core concepts). As I mentioned, Rust is excellent but has a many new concepts, limitations, and frankly some very strange syntax.
+Mark's advice is valid, but abandoning C/C++ means losing valuable core concepts. While Rust is an excellent language, it introduces many new concepts, restrictions, and unusual syntax.
 
-What if there was a language that can take the core good C/C++ concepts and none of the bad stuff, good concepts from Rust/Swift, and a incredibily easy to learn and clean syntax?  **That is the design of Priml.**
+Imagine a language that could preserve the good core concepts of C/C++, exclude the bad elements, incorporate the best features of Rust/Swift, and present an incredibly simple and clean syntax that is easy to learn.  **That is the design of Priml.**
 
 ## Learn more about Priml
 
