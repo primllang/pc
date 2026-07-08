@@ -237,7 +237,7 @@ This statement can only be used inside a while/for/loop statement.  It is used t
 ```go
 break
 ```
-Or, it can optionally specify the ** if segment which will break when the condition is true.
+Or, it can optionally specify the if segment which will break when the condition is true.
 ```go
 break if i == 8
 ```
@@ -247,7 +247,7 @@ This statement can only be used inside a while/for/loop statement.  It is used t
 ```go
 continue
 ```
-Or, it can optionally specify the ** if segment which will break when the condition is true.
+Or, it can optionally specify the if segment which will continue when the condition is true.
 ```go
 continue if i == 8
 ```
