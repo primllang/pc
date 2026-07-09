@@ -23,12 +23,30 @@
     ```bash
     sudo apt-get install clang lldb lld
     ```
-4. Install **Git** if not installed
-    ```bash
-    sudo apt-get install cmake
-    ```
 
 # Windows Setup
+## Option 1: Using winget
+1. Install **Ninja Build**
+    ```cmd
+    winget install ninja
+    ```
+2. Install **CMake** version 3.24 or later,
+    ```cmd
+    winget install cmake
+    cmake --version
+    ```
+    Ensure cmake command is in your path.
+3. Install **LLVM compiler infrastructure**
+    ```cmd
+    winget install llvm
+    ```
+4. Install **Visual Studio 2022 Community Edition** if VS is not installed.  This is needed for Windows SDK and other dependencies.
+    ```cmd
+    winget install Microsoft.VisualStudio.2022.Community
+    ```
+    After initial installation, ensure that C++ development is enabled in **Visual Studio Installer**.
+
+## Option 2: Using choco
 1. Install **choco** if not installed. Instructions: https://docs.chocolatey.org/en-us/choco/setup
 2. Install **Ninja Build**
     ```cmd
@@ -44,11 +62,7 @@
     ```cmd
     choco install llvm -y
     ```
-5. Install **Git** if not installed
-    ```cmd
-    choco install cmake -y
-    ```
-6. Install **Visual Studio 2022 Community Edition** if VS is not installed.  This is needed for Windows SDK and other dependencies.
+5. Install **Visual Studio 2022 Community Edition** if VS is not installed.  This is needed for Windows SDK and other dependencies.
     ```cmd
     choco install visualstudio2022community -y
     ```

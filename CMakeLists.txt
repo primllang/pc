@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.24)
 IF(${CMAKE_HOST_WIN32})
 set(CMAKE_C_COMPILER "C:/Program Files/LLVM/bin/clang.exe")
 set(CMAKE_CXX_COMPILER "C:/Program Files/LLVM/bin/clang++.exe")
+set(CMAKE_RC_COMPILER "C:/Program Files/LLVM/bin/llvm-rc.exe")
 ENDIF()
 
 project(primllang)
