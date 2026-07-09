@@ -160,7 +160,7 @@ func greeting(string name) -> string
 
 func main()
 {
-    print(greeting("Priml"));
+    print(greeting("Priml"))
 }
 
 ```
